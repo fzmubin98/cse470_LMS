@@ -215,6 +215,7 @@ public class Home extends JFrame implements ActionListener{
         
         public void actionPerformed(ActionEvent ae){
             String msg = ae.getActionCommand();
+            calculate_home(1,1);
             if(msg.equals("Logout")){
                 setVisible(false);
 		new Login_user().setVisible(true);
@@ -263,6 +264,8 @@ public class Home extends JFrame implements ActionListener{
             
             }
         }
-
+        int calculate_home(int n1, int n2){
+            return n1+n2;
+ }
 
 }

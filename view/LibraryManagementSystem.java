@@ -52,12 +52,14 @@ public class LibraryManagementSystem extends JFrame implements ActionListener{
         public void actionPerformed(ActionEvent ae){
                 new Login_user().setVisible(true);
                 this.setVisible(false);
-                
+                calculate_lms(1,1);
         }
     public static void main(String[] args) {
         // TODO code application logic here
         LibraryManagementSystem window = new LibraryManagementSystem();
         window.setVisible(true);
     }
-    
+    int calculate_lms(int n1, int n2){
+        return n1+n2;
+ }
 }
