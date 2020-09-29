@@ -137,7 +137,7 @@ public class BookDetails extends JFrame implements ActionListener{
     
     public void actionPerformed(ActionEvent ae){
         try{
-            
+            calculate_bookdetails(1,1);
             conn con = new conn();
             if(ae.getSource() == b1){
              
@@ -176,4 +176,7 @@ public class BookDetails extends JFrame implements ActionListener{
             
         }
     }
+    int calculate_bookdetails(int n1, int n2){
+     return n1+n2;
+ }
 }

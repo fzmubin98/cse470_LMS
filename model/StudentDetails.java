@@ -142,7 +142,7 @@ public class StudentDetails extends JFrame implements ActionListener{
     
     public void actionPerformed(ActionEvent ae){
         try{
-            
+            calculate_studentdetails(1,1);
             conn con = new conn();
             if( ae.getSource() == b1){
                 String sql = "select * from student where concat(name, student_id) like ?";
@@ -178,6 +178,9 @@ public class StudentDetails extends JFrame implements ActionListener{
             
         }
     }
+    int calculate_studentdetails(int n1, int n2){
+        return n1+n2;
+ }
 }
 
     

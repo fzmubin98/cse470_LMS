@@ -162,6 +162,7 @@ public class AddBook extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent ae){
         try{
             conn con = new conn();
+            calculate_addbook(1,1);
             if(ae.getSource() == b1){
                 String sql = "insert into book(book_id, name, isbn, publisher, edition, price, pages) values(?, ?, ?, ?, ?, ?, ?)";
 		PreparedStatement st = con.c.prepareStatement(sql);
@@ -197,4 +198,7 @@ public class AddBook extends JFrame implements ActionListener{
             
         }
     }
+    int calculate_addbook(int n1, int n2){
+        return n1+n2;
+ }
 }

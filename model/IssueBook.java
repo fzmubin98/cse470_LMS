@@ -18,7 +18,7 @@ import javaapplication3.view.Home;
  */
 public class IssueBook extends JFrame implements ActionListener{
         private JPanel contentPane;
-    JDateChooser dateChooser;
+    private JDateChooser dateChooser;
     private JTextField t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14;
     private JButton b1,b2,b3,b4;
 
@@ -297,6 +297,7 @@ public class IssueBook extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent ae){
         try{
             conn con = new conn();
+            calculate_issuebook(1,1);
             if(ae.getSource() == b1){
                 String sql = "select * from book where book_id = ?";
 		PreparedStatement st = con.c.prepareStatement(sql);
@@ -364,4 +365,7 @@ public class IssueBook extends JFrame implements ActionListener{
             
         }
     }
+    int calculate_issuebook(int n1, int n2){
+        return n1+n2;
+ }
 }

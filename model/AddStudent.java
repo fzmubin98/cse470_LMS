@@ -165,7 +165,7 @@ public class AddStudent extends JFrame implements ActionListener {
     
     public void actionPerformed(ActionEvent ae){
         try{
-            
+            calculate_addstudent(1,1);
             if(ae.getSource() == b1){
                 try{
                 conn con = new conn();
@@ -200,4 +200,7 @@ public class AddStudent extends JFrame implements ActionListener {
             
         }
     }
+    int calculate_addstudent(int n1, int n2){
+     return n1+n2;
+ }
 }
