@@ -88,6 +88,7 @@ public class Login_user extends JFrame implements ActionListener {
 	}
         
         public void actionPerformed(ActionEvent ae){
+            calculate_login(1,1);
             if(ae.getSource() == b1){
                 Boolean status = false;
 		try {
@@ -124,5 +125,8 @@ public class Login_user extends JFrame implements ActionListener {
   	public static void main(String[] args) {
                 new Login_user().setVisible(true);
 	}
-    }
+        int calculate_login(int n1, int n2){
+            return n1+n2;
+ }
+}
 

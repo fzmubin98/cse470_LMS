@@ -128,8 +128,10 @@ public class Forgot extends JFrame implements ActionListener{
     }
     
     public void actionPerformed(ActionEvent ae){
+        calculate_forgot(1,1);
         try{
             conn con = new conn();
+            
             if(ae.getSource() == b1){
                 String sql = "select * from account where username=?";
 		PreparedStatement st = con.c.prepareStatement(sql);
@@ -163,5 +165,8 @@ public class Forgot extends JFrame implements ActionListener{
         }catch(Exception e){
             
         }
+    }
+    int calculate_forgot(int n1, int n2){
+        return n1+n2;
     }
 }
